@@ -196,3 +196,16 @@ var ImageView = Backbone.View.extend({
       return this;
    },
 });
+
+
+/*******************
+ * Global function *
+ *******************/
+
+function bomb() {
+    $("img[src^='instagram://']").each(function () {
+        var img = $(this),
+        imageView = new ImageView({img: img});
+        img.replaceWith(imageView.render().el);
+    });
+};

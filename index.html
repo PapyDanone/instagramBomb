@@ -165,14 +165,6 @@
     <script src="js/instagramBomb.js"></script>
     
     <script>
-	
-		function bomb() {
-	        $("img[src^='instagram://']").each(function () {
-	            var img = $(this),
-	            imageView = new ImageView({img: img});
-	            img.replaceWith(imageView.render().el);
-	        });
-	    };
 	    
 	    var currentValue = false,
 	    el = $('#demo-content span');
