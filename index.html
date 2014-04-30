@@ -74,7 +74,7 @@
                                     After including jQuery and the css in the head of your page, all that is left is to include instagramBomb. Put instagramBomb at the bottom of your page, right <strong>before the closing body tag</strong> so as to insure that your page is loaded before instagramBomb is called.
                                 </p>
                                     <div class="highlight" style="background: #202020">
-                                        <pre><span style="color: #6ab825; font-weight: normal">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">"js/jquery.instagramBomb.min.js"</span><span style="color: #6ab825; font-weight: normal">&gt;&lt;/script&gt;</span></pre>
+                                        <pre><span style="color: #6ab825; font-weight: normal">&lt;script </span><span style="color: #bbbbbb">src=</span><span style="color: #ed9d13">"js/instagramBomb.js"</span><span style="color: #6ab825; font-weight: normal">&gt;&lt;/script&gt;</span></pre>
                                     </div><br>
                                     <p>
                                         That's all you have to do for set up!
@@ -109,9 +109,6 @@
                                         In return, we get a picture that matches the keywords in the source url.
                                     </p>
                                     <p>
-                                        We can choose other related images by clicking on the <img class="setup-icon-small" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAApdJREFUeNpiZGBgYALidCD2BmJpBvqBb0B8Foi7gfgxI5CIB+IChoEDD4A4DOSQ9UCswDCwIAUULRzUMs3b25vnxo0b6v///zfo7e2VIEErFyhEtgOxBKWOyM3NFZo0aZIciH3z5s3vGhoaN0nQnsdEjZAQFhZmhjkCBLZu3foRWd7S0pJz9+7divjMoIpDsrKyhNCiiB+ZP3/+fDkXFxd+fGawUMMhAgICzMh8dXV1TlBUGRgYcFpbW/OA+ITMoIpDPnz48BddDDmqiAFUiZqVK1d+/PPnz398atauXfuO5g5RVVVlY2FhYcQlD8pF6enpT2nqEFCOmTVrFtZo+PLly9++vr4XwHRy5+3bt39pmkaqqqpEpaSk2JDF9uzZ89HV1fU+KeZQVKCByodjx46po4eCsbHxzVu3bv2iW4E2YcIEjNq6q6vrBYmOoCyN1NbWipqZmfGgJ8rm5ubX5JjHRG4CLSsrw4jOxMTER+R6jCyHzJw5U5qHhwelNJ03b97r48ePfyfXISQnVlBVv2XLFhVksWfPnv3S09O7SSiLUjWxYiszysvLn1LgCOKiBpQeQI2cz58/64IaPOhlxqlTp74sWbLkI6XlEQshRxw9elQFV+358+fPf7GxsY8YqACYCCVKfFU4IxBQq5mJ1yHBwcFC+OTZ2NgYw8PD+anhEKLqGlBBBYyiLz9+/PgPbI2J4WsU0cwh6A1hZ2dnXuTowtYoonrUgGpR9NISFDLI/GnTpr2jeYhgq8pBbVB4KZSX94jS8oOsIh5UnoCiBRRdPj4+dyZPnvyOWrmGah0sCgG4iP/LMPDgN8ghJwbYEaDEfwVUBpwDYi0glhkAR4DqqHIgvodcRAsDsRgdHfEHiG/DOAABBgDwy+4qw3JyZwAAAABJRU5ErkJggg=="> set up icon and exploring the gallery. When you select an image in the gallery it will automatically be saved to your browsers <a href="http://diveintohtml5.org/storage.html" title="Local Storage" rel="nofollow">local storage</a> so that the next time you come back and visit the page on your machine, your content will persist.
-                                    </p>
-                                    <p>
                                         If you change the search terms in your image source URL, then your local storage for that image is replaced.
                                     </p>
                                 </div>
@@ -142,16 +139,16 @@
                                     </div>
                                 </div><br>
                                 <h5>
-                                    Flickr API Key
+                                    Instagram API Token
                                 </h5>
                                 <p>
-                                    The demo comes with a flickr API key; however, if you are going to be using the plugin heavily, we ask that you include your own API key. In the uncompressed version you can find it by searching for <span>66b5c17019403c96779e8fe88d5b576d</span>. The minified version has a variable at the top that you can set called <span>instagramBombAPIkey</span>.</p>
+                                    The demo comes with a Instagram API Token; however, if you are going to be using the plugin heavily, we ask that you include your own API key. In the uncompressed version you can find it by searching for <span>428917604.1fb234f.2c55da4137c5424bbe2845a7c22dfd43</span>.</p>
                                 <h3>
                                     5. Download
                                 </h3>
                                 <p>
-                                    You can download your copy right here or on <a href="https://github.com/zurb/instagramBomb" title="instagramBomb Github" rel="nofollow">GitHub</a>.
-                                </p><a href="http://zurb.com/playground/instagramBomb/instagramBomb.zip" class="nice button radius large" title="minified version" rel="nofollow">Download instagramBomb</a><br>
+                                    You can download your copy right here or on <a href="https://github.com/PapyDanone/instagramBomb" title="instagramBomb Github" rel="nofollow">GitHub</a>.
+                                </p>
                                 <br>
                             </div>
                         </div>
@@ -165,8 +162,7 @@
 	<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.4/underscore-min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/backbone-localstorage.js/1.1.0/backbone.localStorage-min.js"></script>
-    <script src="js/model.js"></script>
-    <script src="js/view.js"></script>
+    <script src="js/instagramBomb.js"></script>
     
     <script>
 	
